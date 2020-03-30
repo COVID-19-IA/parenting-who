@@ -3,7 +3,9 @@
 @import url(../../node_modules/normalize.css/normalize.css);
 
 html {
-  line-height: 1.5;
+  font-family: sans-serif;
+  color: #232323;
+  line-height: 1.6;
 }
 
 body {
@@ -12,19 +14,42 @@ body {
   margin: 3em auto;
 }
 
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #f7f6eb;
+    color: #444;
+  }
+}
+
+a {
+  text-underline-position: under;
+}
+
 section {
   margin-top: 2em;
+}
+
+h2 {
+  margin-top: 4em;
+}
+
+h3 {
+  margin-top: 4em;
 }
 
 ol,
 ul,
 dl {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 li + li,
 ol ol,
 ul ul {
+  margin-top: 0.5em;
+}
+
+dt:not(:first-of-type) {
   margin-top: 0.5em;
 }
 
