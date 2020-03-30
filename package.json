@@ -1,0 +1,41 @@
+{
+  "name": "content-who-parents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:masuP9/content-who-parents.git",
+  "author": "masuP9 <masuP9@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:prod": "NODE_ENV=production eleventy",
+    "build": "eleventy",
+    "build:css": "postcss src/style/main.css --config postcss.config.js --output docs/style.css",
+    "watch": "DEBUG=Eleventy* eleventy --serve",
+    "watch:css": "yarn build:css --watch",
+    "dev": "npm-run-all -p watch watch:css",
+    "lint:html": "markuplint docs/index.html --ruleset ./markuplintrc",
+    "lint:css": "stylelint src/styles/*",
+    "validate:html": "html-validator --file=docs/index.html --verbose",
+    "test": "npm-run-all -p lint:** validate:html \"prettier --check\"",
+    "prettier": "prettier src/**/*"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "autoprefixer": "^9.7.5",
+    "cssnano": "^4.1.10",
+    "html-validator-cli": "^7.0.0",
+    "markuplint": "^1.0.0-alpha.38",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0",
+    "postcss-custom-properties": "^9.1.1",
+    "postcss-import": "^12.0.1",
+    "prettier": "^2.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
