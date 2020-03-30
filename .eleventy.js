@@ -13,7 +13,7 @@ module.exports = function (eleventyConfig) {
 
   // filter
   eleventyConfig.addNunjucksFilter("dateISOFormat", (v) => {
-    return dayjs(v).format("YYYY-MM-DDTHH:mmZ[Z]");
+    return dayjs(v).format("YYYY-MM-DDTHH:mmZ");
   });
 
   return {
