@@ -1,3 +1,28 @@
 @charset 'utf-8';
 
 @import url(../../node_modules/normalize.css/normalize.css);
+
+html {
+  line-height: 1.5;
+}
+
+body {
+  max-width: 40em;
+  margin: 3em auto;
+}
+
+section {
+  margin-top: 2em;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 2em;
+}
+
+li + li,
+ol ol,
+ul ul {
+  margin-top: 0.5em;
+}
