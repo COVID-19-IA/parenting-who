@@ -5,10 +5,6 @@
   "repository": "git@github.com:masuP9/content-who-parents.git",
   "author": "masuP9 <masuP9@gmail.com>",
   "license": "MIT",
-  "engines": {
-    "node": ">=12"
-  },
-  "engineStrict": true,
   "scripts": {
     "build:prod": "NODE_ENV=production eleventy",
     "build": "eleventy",
