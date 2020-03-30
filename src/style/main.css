@@ -27,3 +27,16 @@ ol ol,
 ul ul {
   margin-top: 0.5em;
 }
+
+.rest-steps {
+  padding-left: 0;
+  list-style: none;
+}
+
+.rest-steps > li:not(:first-of-type) {
+  margin-top: 2em;
+}
+
+.rest-steps > li > ol {
+  margin-top: 1em;
+}
