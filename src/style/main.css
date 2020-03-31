@@ -97,12 +97,22 @@ dt:not(:first-of-type) {
 }
 
 .heading-anchor {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.heading-anchor__link {
+  padding-left: 0.25em;
+  width: 24px;
+  height: 24px;
+  line-height: inherit;
+  background-image: url(/image/link-24px.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
   visibility: hidden;
 }
 
-h2:hover .heading-anchor,
-h3:hover .heading-anchor {
+.heading-anchor:hover .heading-anchor__link,
+.heading-anchor:focus .heading-anchor__link {
   visibility: visible;
 }
