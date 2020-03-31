@@ -102,17 +102,18 @@ dt:not(:first-of-type) {
 }
 
 .heading-anchor__link {
+  padding-right: 0.25em;
   padding-left: 0.25em;
   width: 24px;
   height: 24px;
   line-height: inherit;
   background-image: url(/image/link-24px.svg);
   background-repeat: no-repeat;
-  background-position: right center;
-  visibility: hidden;
+  background-position: center center;
+  opacity: 0;
 }
 
 .heading-anchor:hover .heading-anchor__link,
 .heading-anchor:focus .heading-anchor__link {
-  visibility: visible;
+  opacity: 1;
 }
