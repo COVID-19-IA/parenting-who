@@ -70,3 +70,14 @@ dt:not(:first-of-type) {
 .rest-steps > li > ol {
   margin-top: 1em;
 }
+
+.heading-anchor {
+  display: inline-block;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+h2:hover .heading-anchor,
+h3:hover .heading-anchor {
+  visibility: visible;
+}
