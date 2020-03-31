@@ -61,6 +61,22 @@ dt:not(:first-of-type) {
   margin-top: 0.5em;
 }
 
+/* https://github.com/ampproject/amphtml/blob/2e9a940e78df8de38a6c06a0772aeaa4839a24d1/css/ampshared.css#L164-L204 */
+.visually-hidden {
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  width: 4px !important;
+  height: 4px !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
 .summary {
   margin: 2em 0;
   font-family: "FP-ヒラギノUD角ゴ StdN W6", "FP-HiraginoUDSansStdN-W6",
@@ -81,12 +97,23 @@ dt:not(:first-of-type) {
 }
 
 .heading-anchor {
-  display: inline-block;
-  vertical-align: middle;
-  visibility: hidden;
+  display: flex;
+  align-items: center;
 }
 
-h2:hover .heading-anchor,
-h3:hover .heading-anchor {
-  visibility: visible;
+.heading-anchor__link {
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+  width: 24px;
+  height: 24px;
+  line-height: inherit;
+  background-image: url(/image/link-24px.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+}
+
+.heading-anchor__link:focus,
+.heading-anchor:hover .heading-anchor {
+  opacity: 1;
 }
