@@ -117,3 +117,7 @@ dt:not(:first-of-type) {
 .heading-anchor:focus .heading-anchor__link {
   opacity: 1;
 }
+/* :focus-within を解釈できないブラウザ向けにグルーピングセレクタをやめて別々に記述する */
+.heading-anchor:focus-within .heading-anchor__link {
+  opacity: 1;
+}
