@@ -113,7 +113,7 @@ dt:not(:first-of-type) {
   opacity: 0;
 }
 
-.heading-anchor:hover .heading-anchor__link,
-.heading-anchor__link:focus {
+.heading-anchor__link:focus,
+.heading-anchor:hover .heading-anchor {
   opacity: 1;
 }
