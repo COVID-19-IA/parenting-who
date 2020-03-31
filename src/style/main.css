@@ -123,6 +123,6 @@ ul ul {
 }
 
 .heading-anchor__link:focus,
-.heading-anchor:hover .heading-anchor {
+.heading-anchor:hover .heading-anchor__link {
   opacity: 1;
 }
