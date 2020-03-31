@@ -14,27 +14,20 @@ body {
   margin: 3em auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    background-color: #f7f6eb;
-    color: #444;
-  }
-}
-
 a {
   text-underline-position: under;
 }
 
+img {
+  max-width: 100%;
+}
+
 section {
-  margin-top: 2em;
+  margin-top: 6em;
 }
 
-h2 {
-  margin-top: 4em;
-}
-
-h3 {
-  margin-top: 4em;
+section section {
+  margin-top: 5em;
 }
 
 ol,
