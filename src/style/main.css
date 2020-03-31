@@ -66,6 +66,10 @@ ul ul {
   margin-left: 1em;
 }
 
+[role="directory"] {
+  margin-bottom: 4em;
+}
+
 /* https://github.com/ampproject/amphtml/blob/2e9a940e78df8de38a6c06a0772aeaa4839a24d1/css/ampshared.css#L164-L204 */
 .visually-hidden {
   position: fixed !important;
