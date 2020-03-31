@@ -57,8 +57,17 @@ ul ul {
   margin-top: 0.5em;
 }
 
-dt:not(:first-of-type) {
+#Credit dt:not(:first-of-type) {
   margin-top: 0.5em;
+}
+
+#Credit dd {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+[role="directory"] {
+  margin-bottom: 4em;
 }
 
 /* https://github.com/ampproject/amphtml/blob/2e9a940e78df8de38a6c06a0772aeaa4839a24d1/css/ampshared.css#L164-L204 */
