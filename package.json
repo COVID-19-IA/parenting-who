@@ -18,7 +18,7 @@
     "clear": "rimraf docs",
     "lint:html": "markuplint docs/**/*.html --ruleset ./markuplintrc",
     "lint:css": "stylelint src/style/*",
-    "validate:html": "html-validator --file=docs/parenting-who/index.html --verbose",
+    "validate:html": "html-validator --file=docs/index.html --verbose",
     "test": "npm-run-all -p lint:** validate:html \"prettier --check\"",
     "prettier": "prettier src/**/*.css"
   },
