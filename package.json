@@ -2,8 +2,8 @@
   "name": "content-who-parents",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "masuP9 <masuP9@gmail.com>",
   "repository": "git@github.com:COVID-19-IA/parenting-who.git",
+  "author": "Takehiro Kawase <info@polaar.jp>",
   "license": "CC BY-NC-SA 4.0",
   "scripts": {
     "build:prod": "NODE_ENV=production npm-run-all -p build build:css build:js",
