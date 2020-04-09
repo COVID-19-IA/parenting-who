@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
   eleventyConfig.addWatchTarget("./src/style/");
+  eleventyConfig.addWatchTarget("./src/script/");
 
   // filter
   eleventyConfig.addNunjucksFilter("dateFormat", (v) => {
