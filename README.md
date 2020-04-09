@@ -4,7 +4,7 @@
 
 ## development
 
-Node.js >= v12
+Using Node.js v12.16.1
 
 ```bash
 npm i -g yarn
