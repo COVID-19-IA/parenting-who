@@ -17,11 +17,6 @@ module.exports = function (eleventyConfig) {
     return dayjs(v).format("YYYY-MM-DDTHH:mmZ");
   });
 
-  eleventyConfig.setBrowserSyncConfig({
-    notify: true,
-    startPath: '/parenting-who/'
-  });
-
   return {
     dir: { input: "src", output: "docs" },
     passthroughFileCopy: true,
