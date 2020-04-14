@@ -63,13 +63,21 @@ ul ul {
   margin-top: 0.5em;
 }
 
-#Credit dt:not(:first-of-type) {
+.credit-list dt {
+  font-family: "FP-ヒラギノUD角ゴ StdN W6", "FP-HiraginoUDSansStdN-W6",
+    sans-serif;
+}
+
+.credit-list dt:not(:first-of-type) {
   margin-top: 0.5em;
 }
 
-#Credit dd {
-  display: inline-block;
+.credit-list dd {
   margin-left: 1em;
+}
+
+.credit-list__work-in {
+  font-size: 0.8725em;
 }
 
 [role="directory"] {
