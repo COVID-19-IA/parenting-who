@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "content-who-parents",
+  "name": "parenting-who",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:COVID-19-IA/parenting-who.git",
