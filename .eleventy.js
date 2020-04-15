@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/**/*.(png|jpg|svg|webp)");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 
-  eleventyConfig.addWatchTarget("./src/style/");
+  eleventyConfig.addWatchTarget("./src/");
 
   // filter
   eleventyConfig.addNunjucksFilter("dateFormat", (v) => {
