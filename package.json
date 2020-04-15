@@ -7,7 +7,7 @@
   "author": "Takehiro Kawase <info@polaar.jp>",
   "license": "CC BY-NC-SA 4.0",
   "scripts": {
-    "build:prod": "NODE_ENV=production npm-run-all -p build:html build:css build:js",
+    "build": "NODE_ENV=production npm-run-all -p build:*",
     "build:html": "eleventy",
     "build:css": "postcss src/style/main.css --config postcss.config.js --output docs/style.css",
     "build:js": "webpack",
