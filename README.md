@@ -1,6 +1,8 @@
 # 新型コロナウイルスから子どもの心を守る。WHOから世界中の保護者たちへ。
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f9f3215e-955f-412c-9476-d6a55576c5f7/deploy-status)](https://app.netlify.com/sites/covid-19-act/deploys)
+https://covid-19-act.jp/parenting-who/
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd6e6101-cf83-4a84-884e-96aa923370c6/deploy-status)](https://app.netlify.com/sites/covid-19-act/deploys)
 
 ## development
 
