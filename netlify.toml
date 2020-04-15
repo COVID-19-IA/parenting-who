@@ -1,9 +1,0 @@
-[[redirects]]
-  from = "/"
-  to = "/parenting-who"
-  status = 302
-
-[[redirects]]
-  from = "/publish"
-  to = "https://publish-covid-19-act.netlify.com"
-  status = 301
