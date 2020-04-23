@@ -15,13 +15,13 @@ url: https://covid-19-act.jp/parenting-who/
     <meta name="description" content="急な環境の変化や世の中の物々しい雰囲気によって強いストレスを感じたり、不安定になったお子さんとどう接すれば良いのか、悩んでいらっしゃる保護者の方々のために。"/>
     <meta property="og:title" content="新型コロナウイルスから子どもの心を守る。WHOから世界中の保護者たちへ。"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://covid-19-act.jp/parenting-who/"/>
-    <meta property="og:image" content="http://covid-19-act.jp/parenting-who/illustrations/OGP.jpg"/>
-    <meta property="og:image:secure_url" content="https://covid-19-act.jp/parenting-who/illustrations/OGP.jpg"/>
+    <meta property="og:url" content="{{ url }}"/>
+    <meta property="og:image" content="{% unsslize url %}image/OGP.png">
+    <meta property="og:image:secure_url" content="{{ url }}illustrations/OGP.jpg"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
     <meta property="og:image:alt" content="イラスト：両親と二人のこどもが微笑んでいる。家族を波括弧が囲んでいる。"/>
-    <link rel="canonical" href="https://covid-19-act.jp/parenting-who/"/>
+    <link rel="canonical" href="{{ url }}"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="新型コロナウイルスから子どもの心を守る。WHOから世界中の保護者たちへ。">
     <meta property="og:description" content="急な環境の変化や世の中の物々しい雰囲気によって強いストレスを感じたり、不安定になったお子さんとどう接すれば良いのか、悩んでいらっしゃる保護者の方々のために。"/>
