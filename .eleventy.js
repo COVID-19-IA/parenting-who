@@ -16,6 +16,10 @@ module.exports = function (eleventyConfig) {
     return dayjs(v).format("YYYY-MM-DDTHH:mmZ");
   });
 
+  // Nunjucks Shortcode
+  eleventyConfig.addNunjucksShortcode("baseTag", (v) => {
+    return process.env.NODE_ENV === "production" ? `<base href="${v}">` : "";
+  });
   return {
     dir: { input: "src", output: "docs" },
     passthroughFileCopy: true,
