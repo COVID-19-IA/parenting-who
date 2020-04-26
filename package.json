@@ -9,18 +9,19 @@
   "scripts": {
     "build": "NODE_ENV=production npm-run-all -p build:*",
     "build:html": "eleventy",
-    "build:css": "postcss src/style/main.css --config postcss.config.js --output docs/style.css",
+    "build:css": "postcss src/parenting-who/style/main.css --config postcss.config.js --output docs/parenting-who/style.css",
     "build:js": "webpack",
     "watch:html": "DEBUG=Eleventy* yarn build:html --serve",
     "watch:css": "yarn build:css --watch",
     "watch:js": "yarn build:js --watch --mode development",
     "dev": "npm-run-all -p watch:*",
     "clear": "rimraf docs",
-    "lint:html": "markuplint docs/**/*.html --ruleset ./markuplintrc",
-    "lint:css": "stylelint src/style/*",
-    "validate:html": "html-validator --file=docs/index.html --verbose",
+    "lint:html": "markuplint docs/parenting-who/**/*.html --ruleset ./markuplintrc",
+    "lint:css": "stylelint src/parenting-who/style/*",
+    "validate:html": "html-validator --file=docs/parenting-who/index.html --verbose",
     "test": "npm-run-all -p lint:* validate:html \"prettier --check\"",
-    "prettier": "prettier src/**/*.css"
+    "prettier": "prettier src/parenting-who/**/*.css",
+    "prettier:fix": "prettier --write src/"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
