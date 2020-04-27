@@ -16,6 +16,11 @@ module.exports = function (eleventyConfig) {
     return dayjs(v).format("YYYY-MM-DDTHH:mmZ");
   });
 
+  // Shortcode
+  eleventyConfig.addShortcode("cacheBuster", () => {
+    return `?${dayjs().format("YYYYMMDDHHmm")}`
+  });
+
   // browser-sync option
   eleventyConfig.setBrowserSyncConfig({
     startPath: "/parenting-who/",
